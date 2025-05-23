@@ -6,7 +6,7 @@ Bienvenue dans ce tutoriel complet pour créer une application de blog moderne u
 
 ## 👨‍💻 Réalisé par
 
-Ce projet a été réalisé par : **Abdelmounim MOOUADILI**,
+Ce projet a été réalisé par : **Abdelmounim MOUADILI**,
 dans le cadre du Master _MST-RSI_.
 
 ---
