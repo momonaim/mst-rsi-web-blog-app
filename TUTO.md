@@ -27,7 +27,7 @@ Assure-toi d'avoir les outils suivants installés sur ta machine :
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/momonaim01/mst-rsi-web-blog-app.git
+git clone https://github.com/momonaim/mst-rsi-web-blog-app.git
 cd mst-rsi-web-blog-app
 ```
 
@@ -139,9 +139,21 @@ Configurer Nginx ou Apache pour pointer vers le dossier `public`.
 
 Les captures dans le dossier `screenshots/` :
 
+### Liste des articles
+
 -   ![Liste des articles](screenshots/articles.png)
--   ![Creation d'un article](screenshots/create.png)
+
+### Création d'un article
+
+-   ![Création d'un article](screenshots/create.png)
+
+### Édition d'un article
+
 -   ![Édition d’un article](screenshots/edit.png)
+
+### Tinker test
+
+-   ![Tinker test](screenshots/tinker_test.png)
 
 ---
 
