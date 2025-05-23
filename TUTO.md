@@ -1,6 +1,13 @@
-# 🚀 Tutoriel : Création d'une Application de Blog avec Laravel et Inertia.js
+# 🚀 Tutoriel : Création d'une Application de Blog avec Laravel et React
 
-Bienvenue dans ce tutoriel complet pour créer une application de blog moderne utilisant **Laravel** en backend et **React avec Inertia.js** en frontend.
+Bienvenue dans ce tutoriel complet pour créer une application de blog moderne utilisant **Laravel** en backend et **React** en frontend.
+
+---
+
+## 👨‍💻 Réalisé par
+
+Ce projet a été réalisé par : **Abdelmounim MOOUADILI**,
+dans le cadre du Master _MST-RSI_.
 
 ---
 
@@ -135,5 +142,65 @@ Les captures dans le dossier `screenshots/` :
 -   ![Liste des articles](screenshots/articles.png)
 -   ![Creation d'un article](screenshots/create.png)
 -   ![Édition d’un article](screenshots/edit.png)
+
+---
+
+## 🧹 Nettoyage du projet (Windows)
+
+Avant de redémarrer proprement ton projet Laravel + Inertia.js sous Windows, voici les étapes recommandées :
+
+### 🧼 1. Supprimer les dépendances
+
+#### Supprimer `node_modules`, `vendor`, et les fichiers de lock :
+
+Due to its folder nesting Windows can’t delete the folder as its name is too long. To solve this, install RimRaf:
+
+```bash
+npm install rimraf -g
+
+rimraf node_modules
+rimraf vendor
+# or
+rmdir /s /q node_modules
+rmdir /s /q vendor
+
+del package-lock.json
+del composer.lock
+```
+
+> ⚠️ Attention : Ces commandes suppriment définitivement les dossiers et fichiers.
+
+---
+
+### 📦 2. Réinstaller les dépendances
+
+```bash
+npm install
+composer install
+```
+
+---
+
+### 🔄 3. Réinitialiser la base de données
+
+```bash
+php artisan migrate:fresh --seed
+```
+
+---
+
+### ⚙️ 4. Nettoyer les caches Laravel
+
+```bash
+php artisan optimize:clear
+```
+
+---
+
+### 🛠 5. Recompiler les assets
+
+```bash
+npm run dev
+```
 
 ---
