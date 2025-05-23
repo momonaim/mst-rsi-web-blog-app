@@ -1,6 +1,13 @@
-# 🚀 Tutoriel : Création d'une Application de Blog avec Laravel et Inertia.js
+# 🚀 Tutoriel : Création d'une Application de Blog avec Laravel et React
 
-Bienvenue dans ce tutoriel complet pour créer une application de blog moderne utilisant **Laravel** en backend et **React avec Inertia.js** en frontend.
+Bienvenue dans ce tutoriel complet pour créer une application de blog moderne utilisant **Laravel** en backend et **React** en frontend.
+
+---
+
+## 👨‍💻 Réalisé par
+
+Ce projet a été réalisé par : **Abdelmounim MOOUADILI**,
+dans le cadre du Master _MST-RSI_.
 
 ---
 
