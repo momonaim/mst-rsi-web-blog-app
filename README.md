@@ -137,3 +137,63 @@ Les captures dans le dossier `screenshots/` :
 -   ![Édition d’un article](screenshots/edit.png)
 
 ---
+
+## 🧹 Nettoyage du projet (Windows)
+
+Avant de redémarrer proprement ton projet Laravel + Inertia.js sous Windows, voici les étapes recommandées :
+
+### 🧼 1. Supprimer les dépendances
+
+#### Supprimer `node_modules`, `vendor`, et les fichiers de lock :
+
+Due to its folder nesting Windows can’t delete the folder as its name is too long. To solve this, install RimRaf:
+
+```bash
+npm install rimraf -g
+
+rimraf node_modules
+rimraf vendor
+# or
+rmdir /s /q node_modules
+rmdir /s /q vendor
+
+del package-lock.json
+del composer.lock
+```
+
+> ⚠️ Attention : Ces commandes suppriment définitivement les dossiers et fichiers.
+
+---
+
+### 📦 2. Réinstaller les dépendances
+
+```bash
+npm install
+composer install
+```
+
+---
+
+### 🔄 3. Réinitialiser la base de données
+
+```bash
+php artisan migrate:fresh --seed
+```
+
+---
+
+### ⚙️ 4. Nettoyer les caches Laravel
+
+```bash
+php artisan optimize:clear
+```
+
+---
+
+### 🛠 5. Recompiler les assets
+
+```bash
+npm run dev
+```
+
+---
